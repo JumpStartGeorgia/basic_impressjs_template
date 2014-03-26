@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<title>A Basic impress.js Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="description" content="A basic impress.js template" />
+    <meta name="author" content="JumpStart Georgia" />
+		<link href="stylesheets/styles.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="images/png" href="favicon.ico" />
+	</head>
+	<body>
+		<div id="impress">
+      
+      <div class="step" data-x="0" data-y="0">
+				This is step #1.
+			</div>
+			
+			<div class="step" data-x="2000" data-y="0">
+				This is step #2.
+			</div>
+      			
+		</div>
+		<script type="text/javascript" src="javascripts/jquery.js"></script>
+		<script type="text/javascript" src="javascripts/jquery-mousewheel/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="javascripts/impress.js"></script>
+		<!--
+			call `impress().init()` function to initialize impress.js presentation.
+		-->
+		<script>
+		  impress().init();
+		  
+		  // enable 
+		  $(document).ready(function() {
+		    $(document).on('mousewheel', function() { impress().next(); });
+		    $(document).click(function() { impress().next(); });
+		  });		
+		</script>
+	</body>
+</html>
