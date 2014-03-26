@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
 	<head>
-		<title>A Basic impress.js Template</title>
+		<title>A Basic impress.js Template</title> <!-- UPDATE -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
-    <meta name="description" content="A basic impress.js template" />
-    <meta name="author" content="JumpStart Georgia" />
+    <meta name="description" content="A basic impress.js template" /> <!-- UPDATE -->
+    <meta name="author" content="JumpStart Georgia" /> <!-- UPDATE -->
 		<link href="stylesheets/styles.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="images/png" href="favicon.ico" />
@@ -25,13 +25,12 @@
 		<script type="text/javascript" src="javascripts/jquery.js"></script>
 		<script type="text/javascript" src="javascripts/jquery-mousewheel/jquery.mousewheel.js"></script>
 		<script type="text/javascript" src="javascripts/impress.js"></script>
-		<!--
-			call `impress().init()` function to initialize impress.js presentation.
-		-->
 		<script>
+		  // initialize impress.js library
 		  impress().init();
 		  
-		  // enable 
+		  // enable mouse click and scroll events to use wireless mouse
+		  // to advance to next slide
 		  $(document).ready(function() {
 		    $(document).on('mousewheel', function() { impress().next(); });
 		    $(document).click(function() { impress().next(); });
